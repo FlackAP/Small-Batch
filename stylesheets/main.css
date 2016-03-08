@@ -30,11 +30,11 @@ a {
 
 /* line 35, stdin */
 .welcome {
+  background: black;
   display: table;
   position: relative;
   width: 100%;
   height: 100%;
-  background: url("/images/hero.jpg") no-repeat center center scroll;
   background-size: cover;
   -o-background-size: cover; }
   /* line 46, stdin */
@@ -42,43 +42,63 @@ a {
     color: white; }
   /* line 50, stdin */
   .welcome span {
-    font-size: .5em; }
+    font-size: .69em; }
 
 /* line 55, stdin */
+.welcome-background {
+  background: url("/images/hero.jpg");
+  opacity: 0.7;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+/* line 73, stdin */
 .text-vertical-center {
   display: table-cell;
   text-align: center;
-  vertical-align: middle; }
-  /* line 59, stdin */
+  vertical-align: middle;
+  position: relative;
+  z-index: 2; }
+  /* line 79, stdin */
   .text-vertical-center h1 {
     margin: 0;
     padding: 0;
-    font-size: 3.5em;
+    font-size: 5em;
     font-weight: 700; }
-    /* line 65, stdin */
+    /* line 85, stdin */
     .text-vertical-center h1 img {
       height: 45px;
       margin-top: -14px; }
-  /* line 70, stdin */
+  /* line 90, stdin */
   .text-vertical-center h3 {
     text-align: left; }
 
-/* line 76, stdin */
+/* line 96, stdin */
 footer {
   padding: 45px 0;
   background: #f0eceb; }
 
 @media print {
-  /* line 82, stdin */
+  /* line 102, stdin */
   h1 {
     font-size: 28px; }
-  /* line 85, stdin */
+  /* line 105, stdin */
   h2 {
     font-size: 25px; }
-  /* line 88, stdin */
+  /* line 108, stdin */
   h3 {
     font-size: 20px; }
-  /* line 91, stdin */
+  /* line 111, stdin */
   p, li, a {
     font-size: 16px; } }
 
