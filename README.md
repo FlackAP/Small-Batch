@@ -1,1 +1,1 @@
-# Small-Batch
+# The Home of Small Batch Design

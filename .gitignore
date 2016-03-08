@@ -1,2 +1,8 @@
-.sass-cache/
-*.css.map
+node_modules
+.tmp
+dist
+.sass-cache
+src/bower_components
+
+.DS_Store
+*/.DS_Store
