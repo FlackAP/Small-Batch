@@ -1,0 +1,392 @@
+@import url(http://fonts.googleapis.com/css?family=Hind:500,400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,700);
+/* line 5, stdin */
+html {
+  width: 100%;
+  height: 100%; }
+
+/* line 10, stdin */
+body {
+  font-family: "Hind","Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; }
+
+/* line 15, stdin */
+h1, h2, h3, h4, h5 {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 19, stdin */
+h2 {
+  font-size: 54px;
+  font-weight: 700px; }
+
+/* line 24, stdin */
+p {
+  font-size: 16px; }
+
+/* line 28, stdin */
+a {
+  font-size: 16px; }
+
+/* line 32, stdin */
+a, .icon {
+  color: #33B281; }
+
+/* line 36, stdin */
+a:hover {
+  color: #08855A; }
+
+/* line 40, stdin */
+i {
+  color: #243649; }
+  /* line 43, stdin */
+  i:hover {
+    color: #729f98; }
+
+/* line 49, stdin */
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle; }
+  /* line 53, stdin */
+  .text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5.5em;
+    font-weight: 700; }
+    /* line 59, stdin */
+    .text-vertical-center h1 img {
+      height: 45px;
+      margin-top: -14px; }
+  /* line 64, stdin */
+  .text-vertical-center h3 {
+    text-align: left; }
+
+/* Custom Button Styles */
+/* line 71, stdin */
+.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: #0E7F26; }
+  /* line 75, stdin */
+  .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
+    color: #fff;
+    background-color: #10992E; }
+  /* line 80, stdin */
+  .btn-dark.rounded {
+    border-radius: 2px;
+    box-shadow: 0px 1px 4px 0px #063806; }
+
+/* line 86, stdin */
+.btn-light {
+  border-radius: 0;
+  color: #333;
+  background-color: white; }
+  /* line 90, stdin */
+  .btn-light:hover, .btn-light:focus, .btn-light:active {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8); }
+
+/* Custom Horizontal Rule */
+/* line 98, stdin */
+hr.small {
+  max-width: 100px; }
+
+/* Custom Icon Styles */
+/* line 104, stdin */
+.fa-circle, .fa-list-alt, .fa-times {
+  color: #f0eceb; }
+
+/* line 108, stdin */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-shadow: -1px 1px 1px #326132; }
+
+/* line 116, stdin */
+.fa-circle.fa-stack-2x {
+  text-shadow: -2px 2px 6px rgba(39, 80, 73, 0.88); }
+
+/* Side Menu */
+/* line 124, stdin */
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #133E1C;
+  transition: all 0.4s ease 0s; }
+
+/* line 140, stdin */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 147, stdin */
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px; }
+    /* line 150, stdin */
+    .sidebar-nav li a {
+      display: block;
+      text-decoration: none;
+      color: #999; }
+      /* line 154, stdin */
+      .sidebar-nav li a:hover {
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2); }
+      /* line 159, stdin */
+      .sidebar-nav li a:active, .sidebar-nav li a:focus {
+        text-decoration: none; }
+  /* line 164, stdin */
+  .sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px; }
+    /* line 168, stdin */
+    .sidebar-nav > .sidebar-brand a {
+      color: #999; }
+      /* line 170, stdin */
+      .sidebar-nav > .sidebar-brand a:hover {
+        color: #fff;
+        background: none; }
+
+/* line 178, stdin */
+#menu-open {
+  z-index: 1;
+  position: fixed;
+  top: -5px;
+  left: 0; }
+
+/* line 185, stdin */
+#sidebar.active {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s; }
+
+/* line 195, stdin */
+.toggle {
+  margin: 5px 5px 0 0; }
+
+/* line 202, stdin */
+.bg-primary {
+  background-color: #0E7F26; }
+
+/* Header */
+/* line 208, stdin */
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url(../images/mountains.jpg) no-repeat center center scroll;
+  background-size: cover;
+  -o-background-size: cover; }
+  /* line 219, stdin */
+  .header #subheadline {
+    margin: 0 auto;
+    max-width: 700px; }
+    /* line 223, stdin */
+    .header #subheadline h3 {
+      font-family: "Hind","Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif; }
+    @media (max-width: 740px) {
+      /* line 219, stdin */
+      .header #subheadline {
+        display: none; } }
+
+/* About */
+/* line 236, stdin */
+.about {
+  background: #f0eceb; }
+
+/* line 240, stdin */
+.about, .services {
+  padding: 50px 0; }
+
+/* line 244, stdin */
+.about-photo {
+  width: 100%;
+  border-radius: 200px;
+  position: relative;
+  float: left;
+  top: -20px;
+  padding: 20px;
+  margin-right: 4%;
+  margin-bottom: 4%; }
+  /* line 253, stdin */
+  .about-photo:nth-child(even) {
+    margin-right: 0; }
+  @media (max-width: 991px) {
+    /* line 244, stdin */
+    .about-photo {
+      display: none; } }
+
+/* line 262, stdin */
+.come-in {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-animation: come-in 2s ease forwards;
+  animation: come-in 2s ease forwards; }
+
+/* line 267, stdin */
+.already-visible {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-animation: none;
+  animation: none; }
+
+@-webkit-keyframes come-in {
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+@keyframes come-in {
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); } }
+
+/* Skills/ "Tools of the Trade" */
+/* line 278, stdin */
+.skills {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  position: relative;
+  background: url(../images/bg.jpg) no-repeat center center scroll;
+  background-size: cover;
+  -o-background-size: cover; }
+  @media (max-width: 768px) {
+    /* line 278, stdin */
+    .skills {
+      background: #07754F; } }
+  /* line 294, stdin */
+  .skills .skill, .skills .skill2 {
+    background-color: rgba(94, 135, 128, 0.88);
+    padding: 9px 0px;
+    border-radius: 4px;
+    float: left;
+    padding: 20px;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    box-shadow: -2px 1px 5px 1px rgba(0, 0, 0, 0.32); }
+
+/* line 307, stdin */
+.skill-active {
+  -webkit-transform: translateY(130px);
+  transform: translateY(130px);
+  -webkit-animation: come-in 1.20s ease forwards;
+  animation: come-in 1.20s ease forwards; }
+
+/* line 312, stdin */
+.skill2-active {
+  -webkit-transform: translateY(160px);
+  transform: translateY(160px);
+  -webkit-animation: come-in 0.6s ease forwards;
+  animation: come-in 0.6s ease forwards; }
+
+/* Portfolio */
+/* line 319, stdin */
+.portfolio {
+  padding: 50px 0;
+  background: #f0eceb; }
+  /* line 323, stdin */
+  .portfolio hr {
+    border-top: 1px solid #282828; }
+  /* line 327, stdin */
+  .portfolio p {
+    margin-bottom: 20px;
+    height: 74px;
+    text-align: left; }
+    @media (max-width: 990px) {
+      /* line 327, stdin */
+      .portfolio p {
+        display: none; } }
+  /* line 336, stdin */
+  .portfolio a {
+    color: #243649; }
+  /* line 339, stdin */
+  .portfolio ul {
+    padding-left: 0; }
+  /* line 343, stdin */
+  .portfolio li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 10px; }
+    /* line 347, stdin */
+    .portfolio li a {
+      font-weight: 700; }
+  /* line 352, stdin */
+  .portfolio .btn {
+    margin-top: 30px;
+    color: white; }
+
+/* line 358, stdin */
+.portfolio-item {
+  margin-bottom: 10px;
+  border-radius: 2px; }
+
+/* line 365, stdin */
+.img-portfolio {
+  width: 420px;
+  height: 239px;
+  margin: 0 auto;
+  opacity: 0.8;
+  border-radius: 7px;
+  box-shadow: -1px 1px 6px 0px rgba(153, 153, 153, 0.5); }
+  /* line 373, stdin */
+  .img-portfolio:hover {
+    opacity: 1;
+    box-shadow: -4px 3px 8px 0px rgba(153, 153, 153, 0.5); }
+
+/* testimonial */
+/* line 382, stdin */
+.testimonial {
+  padding: 50px 0;
+  background: #243649; }
+
+@media (min-width: 992px) {
+  /* line 388, stdin */
+  .mobile-rule {
+    display: none; } }
+
+/* Blog */
+/* line 397, stdin */
+.blog .recent {
+  list-style-type: none; }
+  /* line 400, stdin */
+  .blog .recent li {
+    width: 20%;
+    margin: 1%;
+    padding: 2%;
+    text-align: center;
+    display: inline-block; }
+
+/* Footer */
+/* line 412, stdin */
+footer {
+  padding: 45px 0;
+  background: #f0eceb; }
+
+@media print {
+  /* line 418, stdin */
+  h1 {
+    font-size: 28px; }
+  /* line 421, stdin */
+  h2 {
+    font-size: 25px; }
+  /* line 424, stdin */
+  h3 {
+    font-size: 20px; }
+  /* line 427, stdin */
+  p, li, a {
+    font-size: 16px; } }
+
+/*# sourceMappingURL=sass */
